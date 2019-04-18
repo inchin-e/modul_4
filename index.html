@@ -33,7 +33,7 @@
 
  function headerClick() {
     let data = $.getJSON(
-      "http://sf-pyw.mosyag.in/m04/api/forecasts",
+      "https://sf-pyw.mosyag.in/m04/api/forecasts",
       resp => {
         $.each(resp.prophecies, (i, d) => {
           $("#p-" + i).html("<p>" + d + "</p>")
